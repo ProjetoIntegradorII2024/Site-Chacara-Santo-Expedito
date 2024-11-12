@@ -1,6 +1,6 @@
 <?php
 // Definir o endereço de email para onde será enviado
-$email_destino = "contato@chacarasantoexpedito.com";  // Substitua com o email real da empresa
+$email_destino = "deeptubiano@gmail.com";  // Substitua com o email real da empresa
 
 // Verificar se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
