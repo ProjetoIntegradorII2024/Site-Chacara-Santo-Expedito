@@ -34,22 +34,25 @@
             </div>
 
             <!-- Formulário de Contato -->
-            <<!-- modify this form HTML and place wherever you want your form -->
-<form
-action="https://formspree.io/f/mdkozdlk"
-method="POST"
->
-<label>
-  Seu email:
-  <input type="email" name="email">
-</label>
-<label>
-  Sua duvida:
-  <textarea name="message"></textarea>
-</label>
-<!-- your other form fields go here -->
-<button type="submit">Enviar</button>
-</form>
+            <form action="enviar_duvida.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Sua dúvida:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <label for="responsavel">Responsável:</label>
+                <select id="responsavel" name="responsavel" required>
+                    <option value="Atendimento Geral">Atendimento Geral</option>
+                    <option value="Vendas">Vendas</option>
+                    <option value="Suporte Técnico">Suporte Técnico</option>
+                </select>
+
+                <button type="submit">Enviar Dúvida</button>
+            </form>
         </section>
     </main>
 
