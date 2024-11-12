@@ -5,46 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chácara Santo Expedito</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <img src="./img/logo.jpg" alt="Logotipo Chácara Santo Expedito" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="contatos.html">Contato</a>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <img src="imagens/logo.png" alt="Logotipo Chácara Santo Expedito" class="logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="intro">
-            <img src="./img/gado1.jpg" alt="Campo com gado" class="imagem-banner">
-            <div class="texto-banner">
-                <h2>Bem-vindo à Chácara Santo Expedito!</h2>
-                <p>Produzindo o melhor gado de corte com qualidade e tradição.</p>
-            </div>
-        </section>
+    <section id="home">
+        <div class="hero-content">
+            <h1>Bem-vindo à Chácara Santo Expedito</h1>
+            <p>Excelência na produção de gado de corte.</p>
+            <a href="#produtos" class="cta-button">Saiba Mais</a>
+        </div>
+    </section>
 
-        <main>
-            <section id="contato">
-                <h2>Fale Conosco</h2>
-    
-                <!-- Seção de Redes Sociais -->
-                <div class="redes-sociais">
-                    <h3>Conecte-se conosco:</h3>
-                    <a href="https://github.com/suaempresa" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://t.me/suaempresa" target="_blank" class="social-link">
-                        <i class="fab fa-telegram-plane"></i> Telegram
-                    </a>
-                </div>
-            <a href="produtos.html" class="btn-ver-produtos">Ver produtos</a>
-        </section>
-    </main>
+    <section id="sobre" class="section">
+        <h2>Sobre Nós</h2>
+        <p>Chácara Santo Expedito é uma empresa familiar dedicada à produção de gado de corte com a mais alta qualidade...</p>
+    </section>
 
-    <footer>
+    <section id="produtos" class="section">
+        <h2>Nossos Produtos</h2>
+        <!-- Adicione detalhes dos produtos aqui -->
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <div class="social-links">
+            <a href="https://github.com/suaempresa" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://t.me/suaempresa" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+        </div>
+        <form action="enviar_duvida.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Sua dúvida:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar Dúvida</button>
+        </form>
+    </section>
+
+    <footer class="footer">
         <p>&copy; 2024 Chácara Santo Expedito. Todos os direitos reservados.</p>
     </footer>
 </body>
